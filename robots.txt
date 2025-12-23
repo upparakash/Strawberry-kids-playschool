@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://strawberrykidsplayschool.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Disallow unnecessary files
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.pdf$
+
+# Allow important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /programs.html
+Allow: /facilities.html
+Allow: /team.html
+Allow: /gallery.html
+Allow: /events.html
+Allow: /admission.html
+Allow: /contact.html

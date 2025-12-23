@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of Strawberry Kids Playschool - View our classrooms, activities, events, and happy students.">
+    <title>Gallery - Strawberry Kids Playschool</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍓</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="gallery">
+    <div class="floating-elements" id="floatingElements"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="strawberry-icon">🍓</span>
+                <span class="logo-text">Strawberry Kids</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Capturing Moments of Joy and Learning</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Gallery</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="classroom">Classrooms</button>
+                <button class="filter-btn" data-filter="activities">Daily Activities</button>
+                <button class="filter-btn" data-filter="events">Special Events</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor Play</button>
+                <button class="filter-btn" data-filter="arts">Arts & Crafts</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFB6C1, #87CEEB);">
+                        <div class="placeholder-icon">🏫</div>
+                        <p>Colorful Toddler Classroom</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFD700, #90EE90);">
+                        <div class="placeholder-icon">📚</div>
+                        <p>Reading Corner</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #E31837, #FFB6C1);">
+                        <div class="placeholder-icon">🎨</div>
+                        <p>Art Activity Time</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #87CEEB, #90EE90);">
+                        <div class="placeholder-icon">🎵</div>
+                        <p>Music & Movement Class</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFD700, #E31837);">
+                        <div class="placeholder-icon">🎉</div>
+                        <p>Annual Day Celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #90EE90, #FFB6C1);">
+                        <div class="placeholder-icon">🎂</div>
+                        <p>Birthday Celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #87CEEB, #FFD700);">
+                        <div class="placeholder-icon">🌳</div>
+                        <p>Outdoor Play Area</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="outdoor">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #90EE90, #87CEEB);">
+                        <div class="placeholder-icon">⚽</div>
+                        <p>Sports Activities</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="arts">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFB6C1, #FFD700);">
+                        <div class="placeholder-icon">🖌️</div>
+                        <p>Painting Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="arts">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #E31837, #87CEEB);">
+                        <div class="placeholder-icon">✂️</div>
+                        <p>Craft Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classroom">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFD700, #FFB6C1);">
+                        <div class="placeholder-icon">🧩</div>
+                        <p>Learning Center</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-placeholder" style="background: linear-gradient(135deg, #90EE90, #E31837);">
+                        <div class="placeholder-icon">📖</div>
+                        <p>Story Time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Virtual Tour</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Take a virtual tour of our facilities</p>
+            <div class="video-grid">
+                <div class="video-placeholder">
+                    <div class="video-icon">📹</div>
+                    <p>School Tour Video</p>
+                </div>
+                <div class="video-placeholder">
+                    <div class="video-icon">🎬</div>
+                    <p>Day in the Life</p>
+                </div>
+                <div class="video-placeholder">
+                    <div class="video-icon">🎥</div>
+                    <p>Parent Testimonials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Strawberry Kids Playschool</h3>
+                    <p>Nurturing young minds since 2005</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/strawberrykidsdwarka/" target="_blank" aria-label="Facebook" class="social-icon facebook">f</a>
+                        <a href="https://www.instagram.com/strawberrykidsplayschool?igsh=cmh6cDg5b3VvbHEy" target="_blank" aria-label="Instagram" class="social-icon instagram">📷</a>
+                        <a href="https://youtube.com/@strawberrykidsplayschool?si=DQU0bAdUNMsKJqm2" target="_blank" aria-label="YouTube" class="social-icon youtube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admission.html">Admission</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 +91 9873104048</li>
+                        <li>✉️ <a href="mailto:strawberrykidsplay@gmail.com" style="color: inherit; text-decoration: none;">strawberrykidsplay@gmail.com</a></li>
+                        <li>📍 Plot no.45, Sec-12A, Near Bal Bharti Public School, Dwarka, Delhi</li>
+                        <li>🕐 Mon-Fri: 8AM - 5PM</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2005-2025 Strawberry Kids Playschool. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sitemap</a>
+                    <span class="developer-credit">Developed by <a href="https://fedigmaforge.com" target="_blank" rel="noopener" style="color: #DAA520; text-decoration: none;">Fedigma Forge</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="alphabet-footer" id="alphabetFooter"></div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">🍓</button>
+    
+    <style>
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        .filter-btn {
+            padding: 10px 25px;
+            border: 2px solid var(--strawberry-red);
+            background: white;
+            color: var(--strawberry-red);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--strawberry-red);
+            color: white;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .gallery-placeholder {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .gallery-placeholder p {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .video-section {
+            padding: 5rem 0;
+            background: var(--soft-gray);
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .video-placeholder {
+            background: white;
+            height: 250px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .video-placeholder:hover {
+            transform: scale(1.05);
+        }
+        .video-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            animation: fadeIn 0.3s;
+        }
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+            font-weight: 300;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
